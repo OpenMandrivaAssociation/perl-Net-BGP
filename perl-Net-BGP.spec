@@ -11,7 +11,6 @@ Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/Net/%{real_name}-%{versio
 BuildRequires:	perl-devel
 BuildRequires:  perl(Test::Pod)
 BuildArch:	noarch
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
 This module is an implementation of the BGP-4 inter-domain
