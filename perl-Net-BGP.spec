@@ -3,7 +3,7 @@
 Summary:	Net-BGP module for perl 
 Name:		perl-%{real_name}
 Version:	0.08
-Release: %mkrel 4
+Release: %mkrel 6
 License:	GPL or Artistic
 Group:		Development/Perl
 URL:		http://search.cpan.org/dist/%{real_name}
