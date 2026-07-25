@@ -1,15 +1,15 @@
 %define upstream_name    Net-BGP
-%define upstream_version 0.14
+%define upstream_version 0.18
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	4
+Version:	%{upstream_version}
+Release:	1
 
 Summary:	Net-BGP module for perl 
 License:	GPL+ or Artistic
 Group:		Development/Perl
-URL:		https://search.cpan.org/dist/%{upstream_name}
-Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/Net/%{upstream_name}-%{upstream_version}.tar.gz
+URL:		https://metacpan.org/dist/Net-BGP
+Source0:	https://cpan.metacpan.org/authors/id/S/SS/SSCHECK/Net-BGP-%{upstream_version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
