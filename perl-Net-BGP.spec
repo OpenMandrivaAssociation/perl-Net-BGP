@@ -1,15 +1,13 @@
 %define upstream_name    Net-BGP
-%define upstream_version 0.18
-
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	1
+Version:	0.18
+Release:	2
 
 Summary:	Net-BGP module for perl 
 License:	GPL+ or Artistic
 Group:		Development/Perl
 URL:		https://metacpan.org/dist/Net-BGP
-Source0:	https://cpan.metacpan.org/authors/id/S/SS/SSCHECK/Net-BGP-%{upstream_version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/S/SS/SSCHECK/Net-BGP-%{version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
@@ -23,7 +21,7 @@ needed to establish and maintain a BGP peering session and
 exchange routing update information with the peer.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version} 
+%setup -q -n %{upstream_name}-%{version} 
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
@@ -53,8 +51,7 @@ make test
 * Tue Jul 07 2009 JÃ©rÃ´me Quelin <jquelin@mandriva.org> 0.120.0-1mdv2010.0
 + Revision: 393271
 - update to 0.12
-- using %%perl_convert_version
-- fixed license field
+- using %0.18 fixed license field
 
 * Wed Jul 23 2008 Thierry Vignaud <tv@mandriva.org> 0.08-6mdv2009.0
 + Revision: 241759
