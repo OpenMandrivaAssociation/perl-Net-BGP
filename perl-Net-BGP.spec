@@ -2,7 +2,7 @@
 %define upstream_version 0.18
 Name:		perl-%{upstream_name}
 Version:	0.18
-Release:	2
+Release:	3
 
 Summary:	Net-BGP module for perl 
 License:	GPL+ or Artistic
@@ -22,7 +22,7 @@ needed to establish and maintain a BGP peering session and
 exchange routing update information with the peer.
 
 %prep
-%setup -q -n Net-BGP-0.18 
+%setup -q -n Net-BGP-0.18
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
